@@ -1,6 +1,7 @@
 package essai.org;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import essai.org.network.MessageType;
 import essai.org.network.NetworkMessage;
 
@@ -13,6 +14,9 @@ public class WhatsAppClientConsole {
     private BufferedReader in;
     private BufferedWriter out;
     private final ObjectMapper objectMapper = new ObjectMapper();
+    {
+        objectMapper.registerModule(new JavaTimeModule());
+    }
     private String pseudo;
     private boolean connected = false;
     private Scanner scanner;

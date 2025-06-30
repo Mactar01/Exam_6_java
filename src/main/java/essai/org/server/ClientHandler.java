@@ -1,6 +1,7 @@
 package essai.org.server;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import essai.org.model.Message;
 import essai.org.model.Member;
 import essai.org.network.MessageType;
@@ -21,6 +22,9 @@ public class ClientHandler implements Runnable {
     private BufferedReader in;
     private BufferedWriter out;
     private final ObjectMapper objectMapper = new ObjectMapper();
+    {
+        objectMapper.registerModule(new JavaTimeModule());
+    }
     private boolean running = true;
 
     public ClientHandler(Socket socket, WhatsAppServer server) {

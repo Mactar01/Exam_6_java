@@ -1,6 +1,7 @@
 package essai.org.network;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import javafx.application.Platform;
 import essai.org.controller.ClientController;
 import essai.org.model.ChatMessage;
@@ -13,6 +14,9 @@ public class ClientNetwork {
     private BufferedReader in;
     private BufferedWriter out;
     private final ObjectMapper objectMapper = new ObjectMapper();
+    {
+        objectMapper.registerModule(new JavaTimeModule());
+    }
     private final ClientController controller;
     private Thread listenThread;
 

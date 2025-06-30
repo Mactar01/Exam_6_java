@@ -1,6 +1,7 @@
 package essai.org.server;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import essai.org.dao.MemberDAO;
 import essai.org.dao.MessageDAO;
 import essai.org.model.Member;
@@ -44,6 +45,7 @@ public class WhatsAppServer {
         this.memberDAO = new MemberDAO(sessionFactory);
         this.messageDAO = new MessageDAO(sessionFactory);
         this.objectMapper = new ObjectMapper();
+        this.objectMapper.registerModule(new JavaTimeModule());
         this.executorService = Executors.newCachedThreadPool();
         this.connectedClients = new ConcurrentHashMap<>();
         this.onlineMembers = ConcurrentHashMap.newKeySet();

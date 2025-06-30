@@ -5,18 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2f43768-54c6-4fb2-9a33-33ecc0d18eec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/essai/org/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/essai/org/WhatsAppClientConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/essai/org/WhatsAppClientConsole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/essai/org/network/ClientNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/essai/org/network/ClientNetwork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/essai/org/server/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/essai/org/server/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/essai/org/server/WhatsAppServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/essai/org/server/WhatsAppServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,6 +44,9 @@
   &quot;keyToString&quot;: {
     &quot;Application.ServerTest.executor&quot;: &quot;Run&quot;,
     &quot;Application.WhatsAppClient.executor&quot;: &quot;Run&quot;,
+    &quot;Application.WhatsAppClientConsole.executor&quot;: &quot;Run&quot;,
+    &quot;Application.WhatsAppServer.executor&quot;: &quot;Run&quot;,
+    &quot;Application.client.executor&quot;: &quot;Run&quot;,
     &quot;Batch.start-client.executor&quot;: &quot;Run&quot;,
     &quot;Batch.start-multiple-clients.executor&quot;: &quot;Run&quot;,
     &quot;Batch.start-server.executor&quot;: &quot;Run&quot;,
@@ -44,7 +54,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;com.codeium.enabled&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Lenovo/Desktop/L3IAGE/Semester1/JAVA/sockets-demo&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -56,6 +66,16 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="WhatsAppClient" type="Application" factoryName="Application" singleton="false">
+      <option name="MAIN_CLASS_NAME" value="essai.org.WhatsAppClient" />
+      <module name="essai" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\Lenovo\Desktop\L3IAGE\Semester 2\JAVA Avance2\essai\javafx-sdk-21.0.2\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -69,6 +89,9 @@
       <workItem from="1751161167186" duration="314000" />
       <workItem from="1751208561830" duration="1036000" />
       <workItem from="1751250637608" duration="358000" />
+      <workItem from="1751307990917" duration="5830000" />
+      <workItem from="1751313885052" duration="2847000" />
+      <workItem from="1751316876325" duration="2881000" />
     </task>
     <servers />
   </component>
