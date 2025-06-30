@@ -1,0 +1,3 @@
+# Fichier temporaire pour les notifications sonores
+# Remplacer par un vrai fichier .wav pour les notifications
+# Format recommandé : 16-bit, 44.1kHz, mono 

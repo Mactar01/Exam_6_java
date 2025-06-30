@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="essai.org.controller.ClientController" 
+      styleClass="main-container"
+      spacing="0" alignment="TOP_CENTER">
+    
+    <!-- Header avec titre et statut -->
+    <VBox styleClass="header" alignment="CENTER">
+        <Label text="💬 WhatsApp L3IAGE" styleClass="app-title"/>
+        <Label fx:id="statusLabel" text="Prêt à se connecter" styleClass="status-text"/>
+    </VBox>
+    
+    <!-- Zone de connexion -->
+    <VBox styleClass="connection-panel" alignment="CENTER" spacing="15">
+        <HBox styleClass="connection-form" alignment="CENTER" spacing="10">
+            <TextField fx:id="pseudoField" promptText="Entrez votre pseudo" styleClass="pseudo-input"/>
+            <Button fx:id="connectButton" text="🔗 Se connecter" onAction="#onConnect" styleClass="connect-btn"/>
+            <Button fx:id="disconnectButton" text="❌ Se déconnecter" onAction="#onDisconnect" disable="true" styleClass="disconnect-btn"/>
+        </HBox>
+    </VBox>
+    
+    <!-- Zone de chat -->
+    <VBox styleClass="chat-container" VBox.vgrow="ALWAYS">
+        <!-- En-tête du chat -->
+        <HBox styleClass="chat-header" alignment="CENTER_LEFT">
+            <Label text="📱 Messages du groupe" styleClass="chat-title"/>
+            <Label fx:id="memberCount" text="0 membres" styleClass="member-count"/>
+        </HBox>
+        
+        <!-- Zone des messages -->
+        <ScrollPane styleClass="messages-scroll" fitToWidth="true" VBox.vgrow="ALWAYS">
+            <ListView fx:id="messageList" styleClass="message-list"/>
+        </ScrollPane>
+        
+        <!-- Zone de saisie -->
+        <VBox styleClass="input-container" spacing="5">
+            <HBox styleClass="input-form" alignment="CENTER" spacing="10">
+                <TextField fx:id="messageField" promptText="Tapez votre message..." 
+                          HBox.hgrow="ALWAYS" styleClass="message-input"/>
+                <Button fx:id="sendButton" text="📤 Envoyer" onAction="#onSend" styleClass="send-btn"/>
+            </HBox>
+            <Label text="💡 Appuyez sur Entrée pour envoyer rapidement" styleClass="input-hint"/>
+        </VBox>
+    </VBox>
+    
+    <!-- Footer avec informations -->
+    <HBox styleClass="footer" alignment="CENTER">
+        <Label text="🚀 Simulation WhatsApp - L3IAGE" styleClass="footer-text"/>
+    </HBox>
+    
+</VBox> 

@@ -1,0 +1,312 @@
+/* ===== STYLES MODERNES POUR WHATSAPP L3IAGE ===== */
+
+/* Variables CSS pour les couleurs */
+.root {
+    -fx-whatsapp-green: #25D366;
+    -fx-whatsapp-dark: #128C7E;
+    -fx-whatsapp-light: #DCF8C6;
+    -fx-whatsapp-gray: #E8E8E8;
+    -fx-whatsapp-dark-gray: #757575;
+    -fx-whatsapp-white: #FFFFFF;
+    -fx-whatsapp-black: #1C1C1C;
+    -fx-whatsapp-blue: #34B7F1;
+    -fx-whatsapp-red: #FF4444;
+    -fx-whatsapp-orange: #FF9500;
+}
+
+/* Container principal */
+.main-container {
+    -fx-background-color: linear-gradient(to bottom, -fx-whatsapp-green, -fx-whatsapp-dark);
+    -fx-padding: 0;
+    -fx-spacing: 0;
+    -fx-min-width: 500px;
+    -fx-min-height: 600px;
+    -fx-pref-width: 600px;
+    -fx-pref-height: 700px;
+}
+
+/* Header */
+.header {
+    -fx-background-color: -fx-whatsapp-dark;
+    -fx-padding: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0, 0, 2);
+}
+
+.app-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -fx-whatsapp-white;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.status-text {
+    -fx-font-size: 14px;
+    -fx-text-fill: -fx-whatsapp-light;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Zone de connexion */
+.connection-panel {
+    -fx-background-color: -fx-whatsapp-white;
+    -fx-padding: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 1);
+}
+
+.connection-form {
+    -fx-padding: 10px;
+}
+
+.pseudo-input {
+    -fx-font-size: 16px;
+    -fx-pref-width: 200px;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-border-color: -fx-whatsapp-gray;
+    -fx-border-width: 2px;
+    -fx-padding: 10px 15px;
+    -fx-background-color: -fx-whatsapp-white;
+}
+
+.pseudo-input:focused {
+    -fx-border-color: -fx-whatsapp-green;
+    -fx-effect: dropshadow(gaussian, -fx-whatsapp-green, 5, 0, 0, 0);
+}
+
+.connect-btn {
+    -fx-background-color: -fx-whatsapp-green;
+    -fx-text-fill: -fx-whatsapp-white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 2);
+}
+
+.connect-btn:hover {
+    -fx-background-color: -fx-whatsapp-dark;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0, 0, 3);
+}
+
+.connect-btn:pressed {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 2, 0, 0, 1);
+}
+
+.disconnect-btn {
+    -fx-background-color: -fx-whatsapp-red;
+    -fx-text-fill: -fx-whatsapp-white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 2);
+}
+
+.disconnect-btn:hover {
+    -fx-background-color: derive(-fx-whatsapp-red, -20%);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0, 0, 3);
+}
+
+/* Zone de chat */
+.chat-container {
+    -fx-background-color: -fx-whatsapp-white;
+    -fx-padding: 0;
+}
+
+.chat-header {
+    -fx-background-color: -fx-whatsapp-light;
+    -fx-padding: 15px 20px;
+    -fx-border-color: -fx-whatsapp-gray;
+    -fx-border-width: 0 0 1px 0;
+}
+
+.chat-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -fx-whatsapp-dark;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.member-count {
+    -fx-font-size: 12px;
+    -fx-text-fill: -fx-whatsapp-dark-gray;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-padding: 0 0 0 10px;
+}
+
+/* Zone des messages */
+.messages-scroll {
+    -fx-background-color: transparent;
+    -fx-padding: 10px;
+}
+
+.messages-scroll .viewport {
+    -fx-background-color: transparent;
+}
+
+.messages-scroll .scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.messages-scroll .scroll-bar .thumb {
+    -fx-background-color: -fx-whatsapp-gray;
+    -fx-background-radius: 10px;
+}
+
+.message-list {
+    -fx-background-color: transparent;
+    -fx-padding: 5px;
+}
+
+.message-list .list-cell {
+    -fx-background-color: transparent;
+    -fx-padding: 5px;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-font-size: 14px;
+}
+
+.message-list .list-cell:filled {
+    -fx-background-color: transparent;
+}
+
+.message-list .list-cell:filled:selected {
+    -fx-background-color: transparent;
+}
+
+/* Zone de saisie */
+.input-container {
+    -fx-background-color: -fx-whatsapp-light;
+    -fx-padding: 15px;
+    -fx-border-color: -fx-whatsapp-gray;
+    -fx-border-width: 1px 0 0 0;
+}
+
+.input-form {
+    -fx-padding: 5px;
+}
+
+.message-input {
+    -fx-font-size: 14px;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-border-color: -fx-whatsapp-gray;
+    -fx-border-width: 1px;
+    -fx-padding: 10px 15px;
+    -fx-background-color: -fx-whatsapp-white;
+}
+
+.message-input:focused {
+    -fx-border-color: -fx-whatsapp-green;
+    -fx-effect: dropshadow(gaussian, -fx-whatsapp-green, 3, 0, 0, 0);
+}
+
+.send-btn {
+    -fx-background-color: -fx-whatsapp-green;
+    -fx-text-fill: -fx-whatsapp-white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 2);
+}
+
+.send-btn:hover {
+    -fx-background-color: -fx-whatsapp-dark;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0, 0, 3);
+}
+
+.send-btn:disabled {
+    -fx-background-color: -fx-whatsapp-gray;
+    -fx-text-fill: -fx-whatsapp-dark-gray;
+    -fx-effect: none;
+}
+
+.input-hint {
+    -fx-font-size: 11px;
+    -fx-text-fill: -fx-whatsapp-dark-gray;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-padding: 5px 0 0 0;
+}
+
+/* Footer */
+.footer {
+    -fx-background-color: -fx-whatsapp-dark;
+    -fx-padding: 10px;
+}
+
+.footer-text {
+    -fx-font-size: 12px;
+    -fx-text-fill: -fx-whatsapp-light;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Animations et effets */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { translateX: -20px; opacity: 0; }
+    to { translateX: 0px; opacity: 1; }
+}
+
+/* Styles pour les messages */
+.message-user {
+    -fx-background-color: -fx-whatsapp-green;
+    -fx-text-fill: -fx-whatsapp-white;
+    -fx-background-radius: 15px;
+    -fx-padding: 8px 12px;
+    -fx-max-width: 300px;
+    -fx-wrap-text: true;
+}
+
+.message-other {
+    -fx-background-color: -fx-whatsapp-gray;
+    -fx-text-fill: -fx-whatsapp-black;
+    -fx-background-radius: 15px;
+    -fx-padding: 8px 12px;
+    -fx-max-width: 300px;
+    -fx-wrap-text: true;
+}
+
+.message-system {
+    -fx-background-color: -fx-whatsapp-orange;
+    -fx-text-fill: -fx-whatsapp-white;
+    -fx-background-radius: 10px;
+    -fx-padding: 5px 10px;
+    -fx-font-style: italic;
+    -fx-alignment: center;
+}
+
+.message-join {
+    -fx-background-color: -fx-whatsapp-blue;
+    -fx-text-fill: -fx-whatsapp-white;
+    -fx-background-radius: 10px;
+    -fx-padding: 5px 10px;
+    -fx-font-style: italic;
+    -fx-alignment: center;
+}
+
+.message-leave {
+    -fx-background-color: -fx-whatsapp-dark-gray;
+    -fx-text-fill: -fx-whatsapp-white;
+    -fx-background-radius: 10px;
+    -fx-padding: 5px 10px;
+    -fx-font-style: italic;
+    -fx-alignment: center;
+}
+
+.message-ban {
+    -fx-background-color: -fx-whatsapp-red;
+    -fx-text-fill: -fx-whatsapp-white;
+    -fx-background-radius: 10px;
+    -fx-padding: 5px 10px;
+    -fx-font-style: italic;
+    -fx-alignment: center;
+} 
